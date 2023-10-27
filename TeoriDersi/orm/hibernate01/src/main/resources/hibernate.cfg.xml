@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <!--Kullanılcak veritabanı driver tanımlama:-->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <!--Bağlantı için gerekli değerler:-->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Java12HibernateDB</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">1234</property>
+        <!-- En önemli ayarlardan bir tanesidir. Bu ayar ile otomatik olarak tablo oluşturma ve güncelleme
+        işlemlerinin modunu belirlersiniz.
+                CREATE: Proje her yeni başladığın tablolar yeniden oluşturulur. Mevcut tablolar silinir.
+                CREATE-DROP: Create ile aynı işlemi yapıyor. Tek farkı projeyi kapattığınız an oluşturduğu tabloları
+                siler. Test için kullanılabilir.
+                UPDATE: Eğer vt'da tablo yoksa oluşturur. Varsa yapısal değişikleri uygular. Verileri silmez.
+                VALIDATE: VT'daki tablolar ile projedeki entityler uyumlu mu değil mi? Kontrol edip hata varsa hata
+                mesajı fırlatır.
+                -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Hibernate'in arka planda çalıştırdığı SQL sorgusunu console ekranına yazmasını sağlamak için:        -->
+        <property name="hibernate.show_sql">true</property>
+        <!-- Yazdığı SQL sorgusunu daha düzenli göstermesi için kullanılır.       -->
+        <property name="hibernate.format_sql">true</property>
+        <!-- Hibernate @Entity ile işaretlenmemiş sınıfları burada mapping içine yazsanız bile maplemez.
+             Hibernate sınıf ile vt arasında veri iletişimi kurma yeteneğine ancak mapping ile sahip olur.-->
+        <mapping class="com.barisd.entity.Musteri"/>
+    </session-factory>
+
+</hibernate-configuration>
