@@ -1,6 +1,6 @@
-package org.example.util;
+package com.example.util;
 
-import org.example.util.constant.JDBCConstant;
+import com.example.util.constant.JDBCConstant;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

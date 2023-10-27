@@ -1,6 +1,6 @@
-package org.example;
+package com.example;
 
-import org.example.util.Menu;
+import com.example.util.Menu;
 
 
 /*
