@@ -10,14 +10,18 @@
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Java12OrnekETicaret</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">1234</property>
+
         <property name="hibernate.hbm2ddl.auto">update</property>
+
 
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
 
-        <mapping class="com.barisd.entity.Sepet"/>
-        <mapping class="com.barisd.entity.Urun"/>
-        <mapping class="com.barisd.entity.Satis"/>
+        <mapping class="com.barisd.repository.entity.Sepet"/>
+        <mapping class="com.barisd.repository.entity.Urun"/>
+        <mapping class="com.barisd.repository.entity.Satis"/>
+        <mapping class="com.barisd.repository.entity.Musteri"/>
+        <mapping class="com.barisd.repository.entity.SatisDetay"/>
     </session-factory>
 
 </hibernate-configuration>

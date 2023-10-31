@@ -4,11 +4,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/TeoriDersi/jdbc/jdbcOrnek/pom.xml" />
-        <option value="$PROJECT_DIR$/TeoriDersi/jdbc/MusteriJDBC/pom.xml" />
         <option value="$PROJECT_DIR$/UygulamaDersi/CarDealer/pom.xml" />
-        <option value="$PROJECT_DIR$/UygulamaDersi/JdbcExample001/pom.xml" />
-        <option value="$PROJECT_DIR$/UygulamaDersi/JdbcExample002/pom.xml" />
+        <option value="$PROJECT_DIR$/TeoriDersi/jdbc/jdbcOrnek/pom.xml" />
       </list>
     </option>
   </component>
